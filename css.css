@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.menu {
+    position: fixed;
+    background-color: #353432;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 80px; /* Cambia el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 450px;
+}
+
+.menu p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    display: flex; /* Para que los elementos se alineen en una fila */
+    list-style: none; /* Eliminar puntos de lista */
+}
+
+.bloque {
+    margin-left: 20px;
+}
+
+.secciones {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s;
+    margin-right: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.secciones:hover {
+    color: #9ec6b8;
+}
+
+.cont_general {
+    width: 100%;
+    height: 400px;
+    background-color: #9ec6b8;
+}
+
+.cont_general h2 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cont_general p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.CONTRATA {
+    top: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    background-color: #eee21f; /* Color de fondo inicial */
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    border-radius: 10px;
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.CONTRATA:hover {
+    background: linear-gradient(135deg, #f9d74d, #ffcc00); /* Degradado más notorio */
+}
+
+.CONTRATAAHORA {
+    text-decoration: none;
+    color: #1c2426; /* Color de texto inicial */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; /* Opcional: hacer el texto más destacado */
+    padding: 10px 20px; /* Añadir padding para mejor apariencia */
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.CONTRATA:hover .CONTRATAAHORA {
+    color: #ffffff; /* Cambia el color del texto al blanco al pasar el mouse */
+}
+
+.planes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    background-color: #dadcc8;
+    align-items: center;
+    position: relative; /* Agrega esta línea */
+}
+
+.planes h2 {
+    position: absolute; /* Posición absoluta para sacarlo del flujo normal */
+    top: 15px; /* Ajusta según sea necesario */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Compensa el ancho del elemento */
+    text-align: center; /* Centrado del texto */
+    color: #dadcc8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.planuno, .plandos, .plantres {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    background-color: #1c2426;
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #dadcc8;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.planuno {
+    margin-left: 50px;
+}
+
+.plantres {
+    margin-right: 50px;
+}
+
+.dietayrutina, .rutina, .dieta {
+    width: 80%;
+    height: auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+.ACERCA {
+    width: 100%;
+    height: 200px;
+    background-color: #9ec6b8;
+}
+
+.ACERCA h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.ACERCA p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.REDES{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: #dadcc8;
+
+}
+.REDES h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.listalogos {
+    display: flex; /* Para que los elementos se alineen en una fila */
+    list-style: none; /* Eliminar puntos de lista */
+    flex-direction: row;
+    justify-content: center; /* Centra los logos en el contenedor */
+
+}
+
+.redes {
+    display: flex; /* Alinea los logos en fila */
+    justify-content: center; /* Centra los logos */
+    margin-bottom: 20px; /* Espacio debajo de los logos */
+}
+.logos{
+    width: 70px; /* Cambia el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+    
+}
+.redes img {
+    margin: 0 100px; /* Espaciado horizontal entre logos */
+}
+
+
+
+footer {
+    background-color: #353432;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+

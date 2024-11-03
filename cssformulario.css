@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50; /* Fondo oscuro */
+}
+
+.CAJA_NEGRA {
+    background-color: #34495e; /* Fondo del formulario oscuro */
+    width: 90%; /* Ancho responsivo */
+    max-width: 400px; /* Ancho máximo */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    max-height: 80vh; /* Altura máxima para evitar que se desborde */
+}
+
+h1 {
+    text-align: center;
+    color: #ecf0f1; /* Texto claro para el título */
+    margin-bottom: 20px;
+    font-size: 24px; /* Aumentar el tamaño del título */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 24px); /* Ancho total menos padding */
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #1abc9c; /* Borde en color llamativo */
+    box-sizing: border-box; /* Asegura que el padding y el borde no salgan del tamaño total */
+    font-size: 16px;
+    transition: border 0.3s;
+    background-color: #2c3e50; /* Fondo de inputs oscuro */
+    color: #ecf0f1; /* Texto claro */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 1px solid #1abc9c; /* Borde llamativo al enfocar */
+    outline: none;
+}
+
+textarea {
+    height: 100px; /* Altura para el campo de asunto */
+    resize: none; /* Evita que se redimensione */
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 10px; /* Espaciado superior */
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1abc9c; /* Color llamativo para el botón */
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #16a085; /* Color más oscuro al pasar el mouse */
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .CAJA_NEGRA {
+        padding: 15px; /* Espacio interno reducido en pantallas pequeñas */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+}
+

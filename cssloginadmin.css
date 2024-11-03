@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-attachment: fixed;
+    background-color: #abbb9f;
+}
+.CONTENEDORLOGIN{
+    height: auto;
+    width: 100%;
+    padding: 100px;
+    margin-top: 100px;
+    margin: auto;
+    background-color: #abbb9f;
+}
+.contenedor_todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.caja_trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color:#9ec6b8;
+
+}
+
+.caja_trasera div{
+    margin: 100px 40px;
+    color: #fff ;
+    transition: all 500ms;
+}
+
+.caja_trasera div p,
+.caja_trasera div button{
+
+    margin-top: 30px;
+
+}
+.caja_trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: all 300ms;
+}
+.caja_trasera button:hover{
+    background: #fff;
+    color: black;
+}
+
+/*FORMULARIOS*/
+
+.contenedor_login_register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+}
+
+.contenedor_login_register form{
+    width: 100%;
+    padding: 100px 20px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_login_register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+.contenedor_login_register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor_login_register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #9ec6b8;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario_login{
+    opacity: 1;
+    display: block;
+}
+.formulario_register{
+    display: none;
+}
+
+.ACERCA{
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    background-color: #9ec6b8;
+}
+.ACERCA h2{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.ACERCA p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding: 5px;
+}
+.REDES{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: #dadcc8;
+
+}
+.REDES h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.listalogos {
+    display: flex; /* Para que los elementos se alineen en una fila */
+    list-style: none; /* Eliminar puntos de lista */
+    flex-direction: row;
+    justify-content: center; /* Centra los logos en el contenedor */
+
+}
+
+.redes {
+    display: flex; /* Alinea los logos en fila */
+    justify-content: center; /* Centra los logos */
+    margin-bottom: 20px; /* Espacio debajo de los logos */
+}
+.logos{
+    width: 70px; /* Cambia el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+    
+}
+.redes img {
+    margin: 0 100px; /* Espaciado horizontal entre logos */
+}
+
+footer {
+    background-color: #353432;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media screen and(max-width: 850px){
+    main{
+        margin-top: 50px;
+
+    }
+    .caja_trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja_trasera div{
+        margin: 0;
+        position: absolute;
+    }
+    /*FORMULARIOS*/
+    .contenedor_login_register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .formulario_register form{
+        position: relative;
+    }
+}

@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dadcc8;
+}
+
+.menu{
+    position: fixed;
+    background-color:#353432;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+.menu p{
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.bloque{
+    font-size: 1.5rem;
+    display: inline-flex;
+    unicode-bidi: isolate;
+    padding: 20px ;
+    font-size: medium; 
+}
+
+
+.secciones{
+    font-size: 1.5rem;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.secciones:hover{
+    color:#9ec6b8;
+}
+
+.logo{
+width: 80px;
+height: auto;
+justify-items: left;
+}
+
+.cont-rutinas{
+    background-color: #9ec6b8;
+    padding: 10px;
+    padding-top: 50px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;  
+   
+}
+
+
+.cont-rutinas h1{
+    letter-spacing: 3px;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    color:#353432;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.cont-rutinas p{
+    padding: 10px 10px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+
+.cat-rutinas{
+    background-color:#dadcc8;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+        
+}
+.card .front{
+    transform: perspective(600px)rotateY(0deg);
+    box-shadow: 0 5px 10px #353432;
+
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 4);
+    text-align: center;
+
+}
+
+.card .back{
+    transform: perspective(600px)rotateY(180deg);
+    background-color:#353432;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0, 5px, 10px #000;
+    
+}
+.card .back h3{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+} 
+.card .back p{
+    letter-spacing: 1px;
+
+}
+
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+
+}
+
+.h1rutinas{
+    width: 100%;
+    height: 30px;
+    background-color: #dadcc8;
+    justify-content: center;
+    align-items: center;
+
+}
+.h1rutinas h1{
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 20px;
+
+}
+.ACERCA{
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    background-color: #9ec6b8;
+}
+.ACERCA h2{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.ACERCA p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding: 5px;
+}
+.REDES{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: #dadcc8;
+
+}
+.REDES h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.listalogos {
+    display: flex; /* Para que los elementos se alineen en una fila */
+    list-style: none; /* Eliminar puntos de lista */
+    flex-direction: row;
+    justify-content: center; /* Centra los logos en el contenedor */
+
+}
+
+.redes {
+    display: flex; /* Alinea los logos en fila */
+    justify-content: center; /* Centra los logos */
+    margin-bottom: 20px; /* Espacio debajo de los logos */
+}
+.logos{
+    width: 70px; /* Cambia el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+    
+}
+.redes img {
+    margin: 0 100px; /* Espaciado horizontal entre logos */
+}
+
+footer {
+    background-color: #353432;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
+}
